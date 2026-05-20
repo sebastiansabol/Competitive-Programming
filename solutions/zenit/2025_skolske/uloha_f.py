@@ -1,6 +1,7 @@
-import sys
+text = """
+(Varovanie: v tomto texte sa nenachadza diakritika, pretoze mi prestala fungovat moja slovenska klavesnica a mal som v skrini uz len anglicku)
 
-text = """ Toto je rozpravka o jednej malej zabke.
+Toto je rozpravka o jednej malej zabke.
 
 Kde bolo tam bolo, bola raz jedna zabka. No nebola to kdejaka zabka, oh, to vobec nie. Tato zabka mala aj meno! A jej meno nebolo nic ine, nez Zaba.
 
@@ -16,12 +17,11 @@ Akonahle jezibaba docitala formulku, Zaba zacal citit divny pocit v podbrusku. �
 
 Zabka podakoval jezibabe a vyskocil von z jazierka. Akonahle ale vyskocil na sus, ostal zarazeny. “Este nikdy som na vlastne oci nevidel sus, len som o nej cital. Tolko zaujimavych kvetov a stromov tu rastie, nie ako nas jeden druh rias v jazierku. Nesmiem ale otalat, inak sa jazierko cele vysusi!”. Zacal sa teda prechadzat okolo jazierka a tam zrazu uvidel, ze rieka Kofolka, ktora normalne vteka do jazierka je zatarasena odpadkami od deti z posledneho skolskeho vyletu. “Musim tu nechat cedulky aby vedeli, ze to nemozu robit.” povedal si. A ako povedal, tak aj spravil. Hned po tom, ako vyhodil smeti blokujuce prud rieky, vytlacil nove cedulky s napismi ako “Odpadky patria do kosa.” a “Vazte si nasu prirodu, mame len jednu”.
 
-A ked sa Zabka vratil do svojho jazierka, vsetci ho oslavovali ako hrdinu, ktorym aj bol. Starosta Misof mu udelil cestny magistrat za jeho verejnosti-prospesne hrdinstvo. A co nas mily Zaba? To je predsa samozrejme! Akonahle sa stratil zdroj vsetkeho vyrusovania, v klude pokracoval v praci, az pokym neprisiel dalsi deadline."""
-
-pocitadlo = 0
+A ked sa Zabka vratil do svojho jazierka, vsetci ho oslavovali ako hrdinu, ktorym aj bol. Starosta Misof mu udelil cestny magistrat za jeho verejnosti-prospesne hrdinstvo. A co nas mily Zaba? To je predsa samozrejme! Akonahle sa stratil zdroj vsetkeho vyrusovania, v klude pokracoval v praci, az pokym neprisiel dalsi deadline.
+"""
 samohlasky = "aeiou"
-
-for pismeno in text:
-    if pismeno in samohlasky:
-        pocitadlo +=1
+pocitadlo = 0
+for x in text:
+    if x in samohlasky:
+        pocitadlo += 1
 print(pocitadlo)

@@ -1,4 +1,4 @@
-import sys
+import sysd
 
 slova = sys.stdin.read().strip()
 stack = []
