@@ -10,7 +10,10 @@ for _ in range(n):
                         score = 0
                 elif i == 0:
                         score += 1
-                        max(maximum, score)
+        maximum = max(maximum, score)
         print(maximum)
+                        
+                
+                
                         
                 
